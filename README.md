@@ -1,45 +1,77 @@
-### Selección de Herramienta de Captura de Requisitos
+Si bien no puedo crear imágenes o diagramas directamente, puedo describirte cómo crear un diagrama de casos de uso con los elementos necesarios. Puedes utilizar herramientas como Lucidchart, Draw.io, Visio, o incluso papel y lápiz. Aquí te dejo una guía paso a paso para que puedas dibujarlo tú mismo.
 
-#### Herramienta Elegida: Historias de Usuario
+### Diagrama de Casos de Uso para un Sistema de Gestión de Eventos
 
-##### Descripción de la Herramienta
+**Actores:**
+1. **Organizador**
+2. **Participante**
+3. **Administrador del Sistema**
 
-Las **historias de usuario** son una técnica ágil que permite capturar requisitos del sistema desde la perspectiva de los usuarios finales. Cada historia está escrita en un formato simple que describe quién es el usuario, qué necesita y por qué, lo que facilita la implementación de funcionalidades centradas en las necesidades del usuario. El formato típico de una historia de usuario es:
+**Casos de Uso:**
+1. **Crear Evento**
+   - Actor: Organizador
+   - Descripción: El organizador crea un nuevo evento ingresando detalles como nombre, fecha, lugar, descripción, etc.
 
-*Como [tipo de usuario], quiero [acción] para [resultado/beneficio].*
+2. **Invitar Participantes**
+   - Actor: Organizador
+   - Descripción: El organizador envía invitaciones a los participantes registrados.
 
-##### Justificación de la Elección
+3. **Registrarse en Evento**
+   - Actor: Participante
+   - Descripción: Un participante se registra para asistir a un evento específico.
 
-1. **Enfoque en el Usuario**: Las historias de usuario están centradas en los usuarios finales (organizadores y participantes), lo que garantiza que las funcionalidades del sistema se alineen con sus necesidades y expectativas.
+4. **Recibir Notificaciones**
+   - Actor: Participante
+   - Descripción: El participante recibe notificaciones sobre el evento (confirmación, recordatorios).
 
-2. **Simplicidad y Comprensibilidad**: El lenguaje simple utilizado en las historias de usuario permite que cualquier stakeholder, sin importar su nivel técnico, entienda los requisitos y su contexto.
+5. **Gestionar Eventos**
+   - Actor: Administrador del Sistema
+   - Descripción: El administrador gestiona la configuración del sistema, incluyendo eventos y usuarios.
 
-3. **Facilidad para la Prioritización**: Las historias de usuario se pueden clasificar y priorizar fácilmente, lo que ayuda a identificar qué funcionalidades deben desarrollarse primero en función de su impacto en el usuario.
+6. **Generar Reportes**
+   - Actor: Organizador
+   - Descripción: El organizador genera reportes de asistencia y feedback post-evento.
 
-4. **Flexibilidad en Cambios**: Dado que las historias se centran en el valor que aportan al usuario, son más flexibles a cambios en los requisitos conforme avanza el desarrollo, lo que es fundamental en entornos ágiles.
+### Esquema del Diagrama de Casos de Uso
 
-5. **Colaboración**: Fomentan la colaboración entre desarrolladores, diseñadores y otros stakeholders, ya que se puede discutir cada historia y su implementación en conjunto.
+A continuación, sigue este esquema textual para visualizar cómo debería organizarse:
 
-##### Ejemplos de Historias de Usuario
+```
+                        +---------------------+
+                        |   Administrador     |
+                        +---------------------+
+                                |              
+                          ---------------
+                          | Gestionar Eventos|
+                          ------------------
+                                      
+                               
++-------------------+          +-------------------+
+|    Organizador    |----------|      Participante  |
++-------------------+          +-------------------+
+          |                           |
+          |                    --------------
+    ---------------           | Registrarse en  |
+    | Crear Evento |          |      Evento     |
+    ---------------           --------------
+          |
+    -------------------
+    | Invitar Participantes |
+    -------------------
+          |
+    -------------------
+    | Generar Reportes  |
+    -------------------
+   
+```
 
-1. **Para los Organizadores**:
-   - *Como organizador, quiero crear un evento y establecer la fecha y lugar, para poder invitar a los participantes y gestionar su asistencia.*
-   - *Como organizador, quiero generar reportes de participación, para evaluar el éxito del evento y obtener retroalimentación.*
+### Leyenda
+- **Los rectángulos** representan a los actores y casos de uso.
+- **Las líneas** conectan los actores con los casos de uso que pueden realizar.
 
-2. **Para los Participantes**:
-   - *Como participante, quiero registrarme en un evento, para asegurarme un lugar y poder asistir a las actividades programadas.*
-   - *Como participante, quiero recibir notificaciones de confirmación y recordatorios, para estar al tanto del evento y no olvidarlo.*
+### Pasos para Dibujar
+1. Dibuja un círculo o un óvalo en el centro e identifica el sistema (por ejemplo, "Sistema de Gestión de Eventos").
+2. Coloca los actores (Organizador, Participante, Administrador) alrededor del círculo.
+3. Dibuja líneas entre los actores y los casos de uso representados por rectángulos, indicando qué actor puede realizar cada acción.
 
-##### Integración con Otros Métodos
-
-Aunque las historias de usuario serán la herramienta principal de captura de requisitos, también se pueden complementar con:
-
-- **Diagrama de Casos de Uso**: Para una representación visual de las interacciones entre actores y el sistema, ayudando a clarificar las historias de usuario.
-  
-- **Storyboards**: Para ilustrar flujos específicos de usuario y la interfaz visual, proporcionando un contexto adicional en el proceso de desarrollo.
-
----
-
-### Conclusión
-
-La elección de las historias de usuario como herramienta principal para la captura de requisitos permitirá al equipo de desarrollo enfocarse en las necesidades reales de los usuarios del Sistema de Gestión de Eventos. Este enfoque centrado en el usuario, acompañado de otras técnicas complementarias, asegurará que el sistema sea útil, intuitivo y satisfactorio para todos los interesados.
+Cuando completes esto, tendrás un diagrama visual que representa cómo interactúan los diferentes actores con el sistema. Si tienes alguna pregunta específica sobre el diagrama o necesitas más detalles sobre algún caso de uso, ¡házmelo saber!
