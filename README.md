@@ -1,3 +1,4 @@
+El Lenguaje Unificado de Modelado (UML, por sus siglas en inglés: Unified Modeling Language) es un lenguaje estandarizado utilizado en el desarrollo de software para especificar, visualizar, construir y documentar artefactos de sistemas. UML proporciona una forma gráfica de representar arquitecturas y diseños de sistemas complejos. Aquí tienes un resumen de sus componentes y características principales:
 ### 1. **Objetivos de UML**
 - Facilitar la comunicación entre los miembros del equipo de desarrollo.
 - Proporcionar un marco de trabajo que permita el diseño de sistemas orientados a objetos.
