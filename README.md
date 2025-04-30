@@ -1,3 +1,6 @@
+### que es software
+El **software** es un conjunto de instrucciones o programas que le indican a una computadora cómo llevar a cabo tareas específicas. A diferencia del hardware, que son los componentes físicos de un sistema informático, el software es intangible y se divide generalmente en dos categorías: **software de aplicación**, que realiza tareas específicas para el usuario (como procesadores de texto o navegadores) y **software de sistema**, que gestiona el hardware y proporciona servicios para otros tipos de software (como sistemas operativos).
+### que es licenciaiento de software'
 El licenciamiento de software es un conjunto de condiciones y reglas que regulan el uso, distribución y modificación de un programa informático. Estas licencias son fundamentales para proteger los derechos de autor del creador del software y proporcionar a los usuarios un marco legal sobre cómo pueden utilizar dicho software.
 
 ### Tipos de Licencias de Software
