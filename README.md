@@ -1,62 +1,76 @@
- que es software
-El **software** es un conjunto de instrucciones o programas que le indican a una computadora cómo llevar a cabo tareas específicas. A diferencia del hardware, que son los componentes físicos de un sistema informático, el software es intangible y se divide generalmente en dos categorías: **software de aplicación**, que realiza tareas específicas para el usuario (como procesadores de texto o navegadores) y **software de sistema**, que gestiona el hardware y proporciona servicios para otros tipos de software (como sistemas operativos).
-### que es licenciamiento de software
-El licenciamiento de software es un conjunto de condiciones y reglas que regulan el uso, distribución y modificación de un programa informático. Estas licencias son fundamentales para proteger los derechos de autor del creador del software y proporcionar a los usuarios un marco legal sobre cómo pueden utilizar dicho software.
+ 
 
-### Tipos de Licencias de Software
+## 1. Introducción
+Este documento presenta la evaluación de los requerimientos para el software de gestión de eventos. Se han realizado prototipos de la interfaz y se han desarrollado casos de prueba para validar la funcionalidad del sistema. La evaluación se ha llevado a cabo a través de técnicas de validación de requisitos que permiten asegurar que el sistema cumpla con las expectativas de los usuarios y los objetivos del negocio.
 
-1. **Licencias Propietarias**:
-   - **Descripción**: El software es propiedad del creador o de la empresa que lo desarrolló. Los usuarios adquieren solo los derechos de uso, sin poder modificar o redistribuir el software.
-   - **Ejemplos**: Microsoft Windows, Adobe Photoshop.
+## 2. Alcance
+El alcance de este documento incluye:
+- La validación de cuatro historias de usuario seleccionadas.
+- La creación de prototipos de cada interfaz.
+- La elaboración de casos de prueba asociados a cada historia de usuario/prototipo.
 
-2. **Licencias de Código Abierto (Open Source)**:
-   - **Descripción**: Permiten a los usuarios acceder al código fuente y tienen la libertad de usar, modificar y redistribuir el software.
-   - **Ejemplos**: 
-     - **GPL (General Public License)**: Permite que el software sea libre, pero cualquier modificación también debe ser libre.
-     - **MIT License**: Muy permisiva; permite casi cualquier uso, siempre que se incluya el aviso de copyright.
-     - **Apache License**: Permite el uso y la redistribución, así como modificaciones, con ciertas condiciones.
+## 3. Lista de Requerimientos
+Las siguientes historias de usuario han sido seleccionadas para la validación:
 
-3. **Licencias Freeware**:
-   - **Descripción**: El software se ofrece de forma gratuita, pero no se proporciona acceso al código fuente. Las restricciones pueden variar; algunos freeware permiten el uso personal, mientras que otros pueden tener limitaciones sobre la redistribución.
-   - **Ejemplos**: Skype, Adobe Acrobat Reader.
+1. **Historia de Usuario 1:** Como organizador, quiero crear un nuevo evento para gestionar su información.
+2. **Historia de Usuario 2:** Como asistente, deseo registrarme en un evento para poder participar.
+3. **Historia de Usuario 3:** Como organizador, quiero enviar invitaciones a los asistentes para promover el evento.
+4. **Historia de Usuario 4:** Como asistente, quiero recibir notificaciones sobre próximos eventos para no perderme ninguno.
 
-4. **Licencias Shareware**:
-   - **Descripción**: Se permite una prueba gratuita del software por un tiempo limitado. Después del período de prueba, se espera que el usuario compre una licencia para continuar usando el software.
-   - **Ejemplos**: WinRAR, algunas versiones de juegos.
+## 4. Prototipos y Casos de Prueba
 
-5. **Licencias Educativas**:
-   - **Descripción**: Ofrecen descuentos o condiciones especiales para estudiantes, profesores y instituciones educativas. Pueden ser propietarias o de código abierto.
-   - **Ejemplos**: Muchas aplicaciones de software de diseño y programación ofrecen versiones educativas.
-### Licencias Más Adecuadas y Contexto de Uso
+### 4.1 Prototipo 1: Creación de Evento
+*(Incluir imagen del prototipo aquí)*
 
-La elección de una licencia de software adecuada depende del contexto y los objetivos del proyecto:
+#### Caso de Prueba 1
+- **Objetivo del caso de prueba:** Validar la creación de un nuevo evento.
+- **Identificador:** CP-001
+- **Nombre del requerimiento asociado:** Crear un nuevo evento.
+- **Precondiciones:** El organizador ha iniciado sesión en el sistema.
+- **Pasos:**
+  1. Navegar a la sección "Crear Evento".
+     - **Resultado esperado:** Se muestra el formulario de creación de evento.
+  2. Completar todos los campos obligatorios.
+     - **Resultado esperado:** Los campos se completan sin errores.
+  3. Hacer clic en el botón "Guardar".
+     - **Resultado esperado:** Se muestra un mensaje de confirmación y el nuevo evento aparece en la lista de eventos.
 
-- **Proyectos Comerciales**: Para empresas que buscan monetizar su software, las **licencias propietarias** son las más adecuadas, ya que protegen los derechos del autor y permiten el control total sobre el producto.
-  
-- **Proyectos Colaborativos y Abiertos**: Si el objetivo es fomentar la colaboración y la innovación, **licencias de código abierto** como GPL o MIT son ideales. Estas licencias permiten a otros contribuir y mejorar el software, creando una comunidad alrededor del mismo.
+### 4.2 Prototipo 2: Registro en Evento
+*(Incluir imagen del prototipo aquí)*
 
-- **Software Educativo**: Licencias educativas son excelentes para facilitar el acceso a herramientas para estudiantes y docentes, permitiendo un aprendizaje más rico sin costos prohibitivos.
+#### Caso de Prueba 2
+- **Objetivo del caso de prueba:** Validar el registro de un asistente en un evento.
+- **Identificador:** CP-002
+- **Nombre del requerimiento asociado:** Registrarse en un evento.
+- **Precondiciones:** El asistente tiene acceso a la página del evento.
+- **Pasos:**
+  1. Hacer clic en el botón "Registrarse".
+     - **Resultado esperado:** Aparece un formulario de registro.
+  2. Completar el formulario de registro.
+     - **Resultado esperado:** Todos los campos se completan correctamente.
+  3. Hacer clic en "Enviar".
+     - **Resultado esperado:** Se muestra un mensaje de confirmación y el asistente está registrado en el evento.
 
-- **Pruebas de Software**: Para aplicaciones que quieren atraer usuarios antes de la compra, las **licencias shareware** funcionan bien, permitiendo a los usuarios evaluar el software antes de realizar una inversión.
+### 4.3 Prototipo 3: Envío de Invitaciones
+*(Incluir imagen del prototipo aquí)*
 
-### Reflexión 
+#### Caso de Prueba 3
+- **Objetivo del caso de prueba:** Validar el envío de invitaciones a los asistentes.
+- **Identificador:** CP-003
+- **Nombre del requerimiento asociado:** Enviar invitaciones.
+- **Precondiciones:** El organizador ha creado un evento.
+- **Pasos:**
+  1. Acceder a la sección "Invitar Asistentes".
+     - **Resultado esperado:** Se muestra la lista de invitados.
+  2. Seleccionar los contactos de la lista.
+     - **Resultado esperado:** Los contactos seleccionados aparecen resaltados.
+  3. Hacer clic en "Enviar invitaciones".
+     - **Resultado esperado:** Se muestra un mensaje de confirmación de envío.
 
-En respuesta a la participación de mi compañero, quien argumentó que la licencia GPL es la mejor opción para todos los proyectos de software, me gustaría señalar que si bien la GPL fomenta la libertad y la cooperación, no siempre es la más adecuada. Por ejemplo, en entornos comerciales donde se busca proteger la propiedad intelectual y obtener ingresos directos, podría ser más beneficioso optar por licencias propietarias. Además, algunos desarrolladores pueden sentirse desincentivados a innovar si saben que sus contribuciones se volverán de acceso público sin ninguna compensación. En cambio, una combinación de una licencia abierta y una estrategia comercial adecuada podría permitirles mantener su sostenibilidad económica, mientras contribuyen a un ecosistema colaborativo.
+### 4.4 Prototipo 4: Notificaciones de Eventos
+*(Incluir imagen del prototipo aquí)*
 
-### Aspectos Clave del Licenciamiento de Software
-
-- **Derechos de Uso**: Especifica qué puede hacer el usuario con el software (instalación, uso, copias, etc.).
-- **Limitaciones**: Describe lo que los usuarios no pueden hacer (redistribución, ingeniería inversa, modificación, etc.).
-- **Términos de Distribución**: Define si el software puede ser compartido o vendido a otros.
-- **Soporte y Actualizaciones**: Indica si se incluye soporte técnico y actualizaciones del software.
-- **Duración de la Licencia**: Algunas licencias son perpetuas, mientras que otras requieren renovación o tienen una duración limitada.
-
-### Importancia del Licenciamiento
-
-- **Protección Legal**: Proporciona una base legal para la defensa de los derechos de autor y el control sobre el uso del software.
-- **Control del Uso**: Permite a los desarrolladores establecer cómo se usará su software, lo que puede afectar su monetización y reputación.
-- **Fomento de la Innovación**: Las licencias de código abierto pueden fomentar la colaboración y la mejora continua del software, ya que permiten que otros contribuyan al desarrollo.
-
-### Conclusión
-
-El licenciamiento de software es una parte fundamental del ecosistema digital. Comprender las diferentes licencias y sus implicaciones es crucial tanto para los desarrolladores que crean software como para los usuarios que lo utilizan. Al elegir un modelo de licencia, es importante considerar el propósito del software, la audiencia objetivo y cómo se desea que el software se utilice y comparta en el futuro.
+#### Caso de Prueba 4
+- **Objetivo del caso de prueba:** Validar la recepción de notificaciones sobre eventos.
+- **Identificador:** CP-004
+- **Nombre del requerimiento asociado
